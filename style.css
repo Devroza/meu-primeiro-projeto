@@ -1,0 +1,309 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500&display=swap');
+
+@font-face {
+    font-family: 'idroid';
+    src: url('fonte/idroid.otf') format('opentype');
+    font-size: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'bebas';
+    src: url('fonte/BebasNeue.otf') format('opentype');
+    font-size: normal;
+    font-weight: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: #EBE5C5;
+}
+
+header {
+    min-height: 200px;
+    background-image: linear-gradient(to bottom, #0CABA8, #008F8C 10%, #023535 80%);
+    box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.495) ;
+    text-align: center;
+}
+
+.topo {
+    margin: 0px 0px 20px 0px;
+    padding-top: 50px;
+    padding-bottom: 0px;
+    font-family: 'bebas';
+    font-size: 55px;
+    text-align: center;
+    color: white;
+}
+/* Quando eu quiser que uma tag de box-level esteja conectada com outra, eu devo verificar se não há margins(margens) de outras tags que impedem que essas tags se conectem*/
+.topo2 {
+    margin: 10px 401px 36px 412px;
+    margin: auto;
+    font-family: sans-serif;
+    font-weight: normal;
+    text-align: center;
+    font-size: 21px;
+    color: white;
+}
+
+nav {
+    background-color: #023535;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px;
+}
+
+nav > a {
+    padding: 10px;
+    text-decoration: none;
+    color: aquamarine;
+    transition-duration: .5s;
+} 
+
+nav > a:hover {
+    background-color: #008F8C;
+    padding: 10px;
+    border-radius: 5px;
+    color: #045c5a;
+    transition-duration: .5s;
+}
+
+main {
+    border: 0px;
+    min-width: 300px;
+    max-width: 1060px;
+    outline: none;
+    margin: auto;
+    border-radius: 0px 0px 10px 10px; 
+    background-color: white;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.495);
+    text-align: center;
+}
+main p {
+    line-height: 2em;
+}
+
+main > div > p {
+    margin: 15px 20px 15px 20px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 2em;
+}
+
+main > div > h2{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 10px;
+    font-family: 'idroid';
+    text-align: left;
+    color: #045c5a;
+    background-image: linear-gradient(to right, #0FC2C0, white);
+}
+
+.afoto {
+    margin-bottom: 5px;
+}
+
+.dfoto {
+    margin-bottom: 15px;
+}
+
+main > div > img {
+    margin: 10px 20px 10px 20px;
+}
+
+.irinafoto {
+    margin-right: 20px;
+}
+.titulo {
+    padding-top: 15px;
+    font-family: 'idroid';
+    text-align: left;
+    margin: 0px 20px 15px 20px;
+    color: #015958;
+}
+
+.video {
+    padding: 300px 55px;
+    background-color: #015958;
+    position: relative;
+}
+
+.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+.subvideo {
+    font-family: 'Noto Sans', sans-serif;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #92f4f2;
+    margin: 25px 25px 25px 25px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.278);
+
+}
+
+.titulo2 {
+    font-family: 'Noto Sans', sans-serif;
+    text-align: left;
+    text-indent: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 5px;
+    margin: -10px -10px 5px -10px;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #008F8C;
+}
+
+ul {
+    display: inline-block;
+    text-align: left;
+}
+
+.lista {
+    list-style: none;
+    margin: 0px 20px 0px 5px;
+}
+
+.item {
+    position: relative;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.item::before {
+    content: '✔';
+    position: relative;
+    left: 0;
+    top: 0;
+    color: black;
+    margin-right: 5px;
+}
+.lista1 {
+    list-style: none;
+    margin: 10px -10px;
+    padding-left: 20px;
+    float: left;
+}
+
+.lista2 {
+    list-style: none;
+    margin: 10px 10px;
+}
+
+.tfrase {
+    text-align: justify;
+    text-indent: 25px;
+    margin: 0px 20px 10px 0px;
+    padding: 5px 5px 5px 15px;
+}
+
+.pfrase{
+    text-align: justify;
+    text-indent: 25px;
+    margin: 0px 20px 10px 0px;
+    padding: 5px 5px 5px 15px;
+}
+
+.frase {
+    text-align: justify;
+    text-indent: 25px;
+    padding: 5px 10px 30px 15px;
+    margin: 0px 20px 10px 0px;
+}
+
+.frase1 {
+    font-family: 'Noto Sans', sans-serif;
+    padding: 5px 25px 35px 30px;
+    text-align: justify;
+    
+}
+
+footer{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 12px;
+    color: white;
+    background-color: #015958;
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.495);
+}
+/*A partir daqui eu passei a programar de baixo para cima, o seletor .cev1 é de edições do footer.*/ 
+.cev1 {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+.cev1:hover {
+    text-decoration: underline;
+    color: #82eceb;
+}
+
+.landroid {
+    text-decoration: none;
+    font-weight: bold;
+    color: #015958;
+}
+
+.ahistory {
+    text-decoration: none;
+    font-weight: bold;
+    color: #015958;
+    margin-right: 5px;
+}
+
+.ahistory:hover {
+    text-decoration: underline;
+}
+
+.android10 {
+    text-decoration: none;
+    font-weight: bold;
+    color: #015958;
+}
+
+.androidq {
+    color: #015958;
+    font-weight: bold;
+}
+
+.destaque {
+    color: #015958;
+    font-weight: bold;
+}
+
+.bglinks {
+    text-decoration: none;
+    font-weight: bold;
+    color: #015958;
+    background-color: #0FC2C0;
+    margin-right: 5px;
+}
+
+.bglinks:hover {
+    text-decoration: underline;
+}
+
+.google {
+    text-decoration: none;
+    font-weight: bold;
+    color: #015958;
+}
